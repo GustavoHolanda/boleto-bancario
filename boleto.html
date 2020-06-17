@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Moldelo Boleto Bancário</title>
+<style type="text/css">
+
+body{
+    height: auto;
+    overflow: scroll;
+}
+#boleto_parceiro {
+	width: 666px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.am {
+	font-size: 9px;
+	color: #333333;
+	height: 10px;
+	font-weight: bold;
+	margin-bottom: 2px;
+	text-align: center;
+	width: 320px;
+	border-top-width: 1px;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #000000;
+	border-right-color: #000000;
+	border-left-color: #000000;
+}
+#boleto{
+	height: 416px;
+	width: 666px;
+	color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: -1px;
+    font-size: 8.5px;
+}
+
+.logo{
+    width: 120px;
+    margin-bottom: 5px;
+}
+
+.table{
+   width:666px;
+   height:28px;
+   border-bottom:solid;
+   border-bottom-color:#000000;
+   border-bottom-width: 5px;
+}
+[width-25]{
+    width: 25%;
+}
+[width-50]{
+    width: 50%;
+}
+[width-100]{
+    width: 100%;
+}
+
+[width-75]{
+    width: 75%;
+}
+
+[width-12-5]{
+    width: 12.5%;
+}
+
+[width-60]{
+    width: 60%;
+}
+
+[text-right]{
+    text-align: right;
+}
+
+[text-center]{
+    text-align: center;
+}
+
+[border-right]{
+    border-right: 1.5px solid;
+}
+
+[border-bottom]{
+    border-bottom: 1.5px solid;
+}
+
+[border-bottom-dashed]{
+    border-bottom: 2px dashed;
+}
+[border-bottom-left-right]{
+    border-bottom: 1.5px solid;
+    border-right: 1.5px solid;
+    border-left: 1.5px solid;
+}
+
+[initial]{
+    vertical-align: initial;
+}
+
+#header-primary{
+    font-size: 20px;
+    font-weight: bold;
+}
+.header-secondary{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#header-number{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#boleto_parceiro_info{
+    font-size: 8.5px;
+}
+
+#tesoura{
+    width: 31px;
+    margin-left: 635px;
+    margin-top: -27px;
+}
+</style>
+</head>
+
+<body>
+<div id="boleto_parceiro">
+  <table class="table" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width-25 ><img class="logo" src="https://wikioso.org/wp-content/uploads/2013/06/logo-bradesco-.png"></td>
+    <td width-25  id="header-primary"> 237-2</td>
+    <td text-right width-50 class="header-secondary"> RECIBO DO PAGADOR</td>
+  </tr>
+</table>
+
+  <table width-100 border="0" cellspacing="0" border-bottom cellpadding="0" id="boleto_parceiro_info">
+    <tr>
+    <td width-25 border-right  style="padding: 5px 30px 5px 5px;">
+        <div >Beneficiário:</div>
+        <div  style="padding: 3px 0 13px 0; "> <b>VENDA DE ELETRONICOS</b></div>
+        <div> COMERCIO DE ELETRONICOS LTDA </div>
+        <div> CNPJ: 00.000.000/0001-00</div>
+        <div>AV SEM NOME, 0000  SÃO PAULO</div>
+        <div> São Paulo</div>
+    </td>
+    <td width-25 border-right style="padding: 5px 30px 5px 5px;" initial>
+        <div>Agência/Cod.Beneficiário:</div>
+        <div> 0.000-0/0.000.000-0</div>
+    </td>
+    <td width-25 border-right style="padding: 5px 30px 5px 5px;" initial> 
+        <div>Data de Emissão:</div>
+        <div> <b> 00/00/0000</b></div>
+    </td>
+    <td width-25 style="padding:5px" initial>
+        <div> Data de Vencimento</div>
+        <div text-right > <b> 00/00/0000</b></div>
+    </td>
+    </tr>
+  </table>
+
+  <table width-100 border="0" border-bottom  cellspacing="0" cellpadding="0" id="boleto_parceiro_info">
+    <tr>
+        <td width-25 border-right style="padding: 5px 30px 5px 5px;">
+            <div style="padding-bottom: 3px">Pagador:</div>
+            <div> <b> Nome do pagador</b> </div>
+        </td>
+        <td width-25 border-right style="padding: 5px 30px 5px 5px;">
+            <div style="padding-bottom: 3px">Nosso número:</div>
+            <div> <b> 00/00.000.000.000-0</b> </div>
+        </td>
+        <td width-25 border-right style="padding: 5px 30px 5px 5px;" initial> 
+            <div style="padding-bottom: 3px">Número Documento:</div>
+            <div> <b> 000.000.000-00</b> </div>
+        </td>
+        <td width-25 style="padding: 5px;" initial> 
+            <div style="padding-bottom: 3px">Valor Documento:</div>
+            <div text-right> <b> R$ 250.000,00</b> </div>
+        </td>
+    </tr>
+    </table>
+    <table width-100 border="0"  border-bottom  cellspacing="0" cellpadding="0" id="boleto_parceiro_info">
+        <tr>
+            <td  style="padding: 5px 30px 5px 5px;">
+                <div style="padding-bottom: 3px">Referência:</div>
+                <div style="padding-bottom: 3px"> <b> Compras efetuadas através do Comércio Eletrônico.</b> </div>
+                <div > <b> Estabelecimento: TESTE ELETRONICOS / Referência do Pedido: 000000000 </b></div>
+            </td>
+        </tr>
+    </table>
+    <table width-100 border="0"  border-bottom-dashed  cellspacing="0" cellpadding="0" id="boleto_parceiro_info">
+        <tr>
+            <td  style="padding: 10px 5px 30px 5px;">
+                <div style="padding-bottom: 3px" class="header-secondary" text-right>Autenticação Mecanica</div>
+            </td>
+        </tr>
+    </table>    
+</div>
+    <img src="http://clipartstation.com/wp-content/uploads/2017/11/scissors-clipart-png.png" id="tesoura">
+</div>
+
+
+<div id="boleto">
+    <table class="table" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width-25 ><img class="logo" src="https://wikioso.org/wp-content/uploads/2013/06/logo-bradesco-.png"></td>
+            <td  id="header-primary"> 000-0</td>
+            <td text-right id="header-number"> 00000.00000 00000.000000 00000.000000 0 00000000000000</td>
+        </tr>
+    </table>
+    <table  style="width: 100%;"  cellspacing="0" cellpadding="0" border-bottom-left-right>
+        <tr>
+            <td  style="padding: 5px" initial> Local de Pagamento</td>
+            <td width-60 style="padding: 7px 5px 5px 0" border-right>
+                <div> <b>Banco Bradesco S.A. </b></div>
+                <div>Pagável preferencialmente em qualquer agência Bradesco.</div>
+            </td>
+            <td width-25 style="padding: 5px">
+                <div> Data de Vencimento</div>
+                <div text-right > <b> 00/00/0000</b></div>
+            </td>
+        </tr>
+    </table>
+    <table  style="width: 100%;" cellspacing="0" cellpadding="0" border-bottom-left-right>
+            <tr>
+                <td width-75 border-right style="padding: 5px 30px 5px 5px;">
+                    <div >Beneficiário:</div>
+                    <div  style="padding: 3px 0 13px 0; "> <b>VENDA DE ELETRONICOS</b></div>
+                    <div>COMERCIO DE ELETRONICOS LTDA </div>
+                    <div> CNPJ: 00.000.000/0000-00</div>
+                    <div>AV SEM NOME, 0000  </div>
+                    <div> SÃO PAULO</div>
+                    <div> São Paulo</div>
+                </td>
+                <td  style="padding: 5px;" initial>
+                    <div  style="padding-bottom: 3px;">Agência/Cod.Beneficiário:</div>
+                    <div text-right><b> 0.000-0/0.000.000-0</b></div>
+                </td>
+            </tr>
+        </table>
+    <table  style="width: 100%;" cellspacing="0" cellpadding="0" border-bottom-left-right>
+        <tr>
+            <td style="width: 17.5%; padding:5px;" border-right >
+                <div>Data Documento:</div>
+                <div text-center><b>00/00/0000</b></div>
+            </td>
+            <td style="width: 25%; padding:5px;" border-right >
+                <div>N Documento</div>
+                <div text-center><b>00000000000</b></div>
+            </td>
+            <td  style="width: 10% ;padding: 5px;" border-right>
+                <div  style="padding-bottom: 3px;">Espécie Doc.</div>
+                <div text-center><b>Outro</b></div>
+            </td>
+            <td  style="width: 7.5% ;padding: 5px;" border-right>
+                <div style="padding-bottom: 3px;">Aceite</div>
+                <div text-center><b> N</b></div>
+            </td>
+            <td  style="width: 15% ;padding: 5px;" border-right>
+                <div style="padding-bottom: 3px;">Data Processamento</div>
+                <div text-center><b> 00/00/0000</b></div>
+            </td>
+            <td style="width: 25.5% ;padding: 5px;">
+                <div  style="padding-bottom: 3px;">Nosso Número</div>
+                <div text-right><b> 00/00.000.000.000-0</b></div>
+            </td>
+        </tr>
+    </table>
+
+    <table  style="width: 100%;" cellspacing="0" cellpadding="0" border-bottom-left-right>
+        <tr>
+            <td style="width: 17.5%; padding:5px;" border-right initial>
+                <div>Uso do Banco</div>
+            </td>
+            <td style="width: 10%; padding:5px;" border-right >
+                <div>Cip</div>
+                <div text-center><b>000</b></div>
+            </td>
+            <td style="width: 15%; padding:5px;" border-right >
+                <div>Carteira</div>
+                <div text-center><b>00</b></div>
+            </td>
+            <td  style="width: 10%;" border-right>
+                <div  style="padding-bottom: 3px;" text-center>Espécie Moeda</div>
+                <div text-center><b>Real</b></div>
+            </td>
+            <td  style="width: 7.5% ;" border-right initial>
+                <div  style="padding-bottom: 3px;"text-center >Quantidade</div>
+            </td>
+            <td  style="width: 15%;padding: 5px;" border-right initial>
+                <div  style="padding-bottom: 3px;" >Valor</div>
+            </td>
+            <td style="width: 25.5% ;padding: 5px;">
+                <div  style="padding-bottom: 3px;">Valor do Documento</div>
+                <div text-right><b> R$ 250.000,00</b></div>
+            </td>
+        </tr>
+    </table>
+    <table  style="width: 100%;" cellspacing="0" cellpadding="0" border-bottom-left-right>
+        <tr>
+            <td style="width: 59.8%; padding: 10px 5px 100px 5px; line-height: 1.4;" border-right>
+                <div> <b>Instruções (Texto de responsabilidade do beneficiário)</b> </div>
+                <div> Caixa: não receber após a data de vencimento </div>
+                <div>  Dúvidas enviar email para sac@sac.com.br</div>
+            </td>
+            <td style="width: 20%; padding:5px;line-height: 1.4;"  initial>
+                <div>(-) Desconto/Abatimento </div>
+                <div> (-) Outras Deduções </div>
+                <div> (+) Mora/Multa </div>
+                <div>(+) Outros Acréscimos </div>
+                <div>(+) Valor Cobrado </div>
+            </td>
+        </tr>
+    </table>
+    <table  style="width: 100%;" cellspacing="0" cellpadding="0" border-bottom-left-right>
+        <tr>
+            <td style="width: 5%; padding-left: 5px; line-height: 1.4;" initial> Pagador:</td>
+            <td style="width: 54.2%; padding: 10px 5px 40px 5px; line-height: 1.4;" border-right initial>
+                <div>Sem nome</div>
+                <div>Rua sem nome, 000 ap 00</div>
+                <div>00000-000 São Paulo SP 000.000.000-00</div>
+                <div>Sacador/Avalista: VENDA DE ELETRONICOS</div>
+            </td>
+            <td style="width: 20%; padding:5px 5px 20px 5px; vertical-align: bottom;" text-center>
+                    Ficha de Compensação
+            </td>
+        </tr>
+    </table>
+    <table  style="width: 100%;" cellspacing="0" cellpadding="0">
+        <tr>
+        <td initial>
+            <img src="https://www.barcoderesource.com/images/Code128Barcode.jpg">
+        </td>
+        <td style="width: 25%; padding-top: 20px;vertical-align: top;" >
+            <div class="header-secondary">Autenticação Mecânica</div>
+        </td>
+        </tr>
+    </table>
+
+
+
+
+
+
+</div>
+</body>
+</html>
